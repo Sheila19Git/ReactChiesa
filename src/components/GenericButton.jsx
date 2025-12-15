@@ -1,14 +1,21 @@
- export default function GenericButton(props){
+ import { Link } from "react-router-dom";
 
-    const myStyles = {
-        backgroundColor:props.color, 
-        fontFamily:"monospace", 
-        color:"black",
-    };
+export default function GenericButton(props){
 
-    return (
-    <>
-    <button style={myStyles}>{props.name}</button>
-    </>
-    );
- }
+  const myStyles = {
+    backgroundColor: props.color, 
+    fontFamily: "monospace", 
+    color: "black",
+    border: "none",
+    padding: "8px 12px",
+    cursor: "pointer"
+  };
+
+  return (
+    <Link to={props.to} style={{ textDecoration: "none" }}>
+      <button style={myStyles}>
+        {props.name}
+      </button>
+    </Link>
+  );
+}
