@@ -1,18 +1,19 @@
  import "./NavBar.css";
 import GenericButton from "./GenericButton";
 import CartWidget from "./CartWidget";
+import logo from "../assets/logo.png";
 
 export default function NavBar() {
   return (
     <nav className="nav-container">
 
-      <h1 className="logo">Landing</h1>
+      <img src={logo} alt="Logo" className="logo-img" />
 
       <div className="links">
         <GenericButton name="Home" color="white" to="/" />
-        <GenericButton name="Deportes" color="white" to="/category/deportes" />
-        <GenericButton name="Tecnología" color="white" to="/category/tecnologia" />
-        <GenericButton name="Turismo" color="white" to="/category/turismo" />
+        <GenericButton name="Perfumeria" color="white" to="/category/perfumeria" />
+        <GenericButton name="Belleza" color="white" to="/category/belleza" />
+        <GenericButton name="Accesorios" color="white" to="/category/accesorios" />
       </div>
 
       <CartWidget />

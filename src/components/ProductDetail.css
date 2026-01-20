@@ -1,0 +1,29 @@
+ .btn-carrito {
+  background-color: #f8d7e3;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn-carrito:hover {
+  background-color: #f3bfd3;
+}
+
+.btn-detalle {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.25s ease;
+}
+
+.btn-detalle:hover {
+  background-color: #cfcfcf;
+}

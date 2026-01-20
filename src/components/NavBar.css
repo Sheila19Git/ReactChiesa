@@ -1,24 +1,17 @@
- 
  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
-
-
 }
 
- 
- 
- .nav-container {
-  background-color: gainsboro;
+.nav-container {
+  background-color: #f2f2f2; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 24px; 
+  padding: 12px 32px;
+  font-family: 'Poppins', sans-serif;
 }
-
-
 
 .links {
   display: flex;
@@ -26,71 +19,44 @@
 }
 
 
-button {
-  background: transparent;
+.nav-container button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background-color: transparent;
   border: none;
-  font-size: 17px; 
   cursor: pointer;
-  padding: 10px 14px; 
-  border-radius: 6px;
-  transition: 0.25s;
+  transition: background-color 0.25s ease;
 }
 
-
-button:hover {
-  background-color: #d0d0d0;
+.nav-container button:hover {
+  background-color: #f8d7e3; 
 }
 
 
 .nav-container img {
-  width: 28px;
+  width: 90px;
   cursor: pointer;
 }
 
-
-.logo {
-  font-size: 32px; 
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.logo-img {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
 }
-
-
-.products-container {
-  display: grid;
-  gap: 24px;
-  padding: 24px;
-}
-
-.product-card {
-  padding: 16px;
-  border-radius: 16px;
-  background-color: darkgrey;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin: 40px auto;
-  max-width: 600px;
-}
-
-.product-card h4 {
-  font-size: 18px;
+.nav-btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
   font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.25s ease;
 }
 
-.product-card p {
-  font-size: 14px;
-  color: dimgrey;
+.nav-btn:hover {
+  background-color: #f8d7e3;
 }
-
-.product-detail {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 32px;
-  background-color: darkgray;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-

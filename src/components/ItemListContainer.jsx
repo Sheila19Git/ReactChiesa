@@ -1,6 +1,6 @@
  import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getProducts } from "./asyncMock"; 
+import { getProducts } from "../mocks/asyncMock"; 
 import ProductCard from "./ProductCard";
 
 export default function ItemListContainer({ mensaje }) {
@@ -18,7 +18,7 @@ export default function ItemListContainer({ mensaje }) {
   }, [categoryId]);
 
   return (
-    <div className="product.container">
+    <div className="products-container">
       <h2>{mensaje}</h2>
 
       {categoryId && <h3>Categoría: {categoryId}</h3>}
@@ -29,3 +29,4 @@ export default function ItemListContainer({ mensaje }) {
     </div>
   );
 }
+
