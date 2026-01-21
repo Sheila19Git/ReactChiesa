@@ -34,10 +34,14 @@ export default function Cart() {
       <button className="cart-clear" onClick={clearCart}>
         Vaciar carrito
       </button>
+   <Link 
+     to="/checkout" 
+      className="cart-checkout"
+     onClick={clearCart} 
+    >
+      Finalizar compra
+  </Link>
 
-      <Link to="/checkout" className="cart-checkout">
-         Finalizar compra
-      </Link>
     </div>
   );
 }
