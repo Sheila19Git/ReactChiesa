@@ -2,6 +2,8 @@
 import { CartContext } from "../Context/CartContext.jsx";
 import ProductCard from "./ProductCard.jsx";
 import './Cart.css';
+import { Link } from "react-router-dom";
+
 
 
 export default function Cart() {
@@ -32,6 +34,10 @@ export default function Cart() {
       <button className="cart-clear" onClick={clearCart}>
         Vaciar carrito
       </button>
+
+      <Link to="/checkout" className="cart-checkout">
+         Finalizar compra
+      </Link>
     </div>
   );
 }

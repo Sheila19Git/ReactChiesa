@@ -6,7 +6,6 @@ import logo from "../assets/logo.png";
 export default function NavBar() {
   return (
     <nav className="nav-container">
-
       <img src={logo} alt="Logo" className="logo-img" />
 
       <div className="links">

@@ -12,11 +12,8 @@ export default function CartWidget() {
         alt="Carrito"
         className="cart-widget-icon"
       />
-
       {totalQuantity > 0 && (
-        <span className="cart-widget-badge">
-          {totalQuantity}
-        </span>
+        <span className="cart-widget-badge">{totalQuantity}</span>
       )}
     </Link>
   );

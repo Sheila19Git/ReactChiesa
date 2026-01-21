@@ -1,10 +1,11 @@
-import './App.css'
+ import './App.css'
+import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from "./components/Cart.jsx";
-
+import Checkout from "./components/Checkout";
 
 function App() {
   return (
@@ -27,16 +28,19 @@ function App() {
           element={<ItemDetailContainer />}
         />
 
-        
-       <Route
+        <Route
           path="/cart"
-         element={<Cart />}
-       />
+          element={<Cart />}
+        />
+        <Route
+          path="/checkout"
+          element={<Checkout />}
+        />
       </Routes>
-       
+
+      <Footer />
     </>
   )
 }
 
 export default App;
-
