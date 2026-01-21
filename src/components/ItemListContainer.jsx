@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../firebase/Firebase";
 import ProductCard from "./ProductCard";
-import "./HomeBanner.css";
+import "./Homebanner.css";
 
 
 export default function ItemListContainer({ mensaje }) {
