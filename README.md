@@ -1,16 +1,84 @@
-# React + Vite
+ # Proyecto Final React – E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web tipo **e-commerce** desarrollada con **React** como trabajo final del curso.
 
-Currently, two official plugins are available:
+Permite navegar un catálogo de productos, ver el detalle de cada uno, agregar productos al carrito y finalizar una compra generando una orden en **Firebase Firestore**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠 Tecnologías utilizadas
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- React
+- Vite
+- React Router DOM
+- Context API
+- Firebase / Firestore
+- CSS
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Funcionalidades principales
+
+- Listado dinámico de productos desde Firestore
+- Navegación por categorías
+- Vista en detalle de cada producto
+- Selector de cantidad (ItemCount)
+- Carrito de compras con:
+  - Agregar y eliminar productos
+  - Vaciar carrito
+  - Cálculo de totales
+- Checkout con formulario de compra
+- Generación de orden en Firestore
+- Visualización del ID de la orden al finalizar la compra
+- Renderizado condicional:
+  - Carrito vacío
+  - Mensajes de estado
+- Navegación SPA sin recarga de página
+
+---
+
+## Navegación
+
+- Home
+- Categorías
+- Detalle de producto
+- Carrito
+- Checkout
+
+---
+
+## 🗂 Estructura del proyecto
+
+- `NavBar`
+- `CartWidget`
+- `ItemListContainer`
+- `ItemList`
+- `Item`
+- `ItemDetailContainer`
+- `ItemDetail`
+- `ItemCount`
+- `Cart`
+- `Checkout`
+
+---
+
+## Firebase
+
+Se utiliza **Firestore** como base de datos para:
+- Almacenar productos
+- Registrar órdenes de compra
+
+Las credenciales de Firebase se manejan mediante variables de entorno.
+
+---
+
+## Instalación y ejecución
+
+1. Clonar el repositorio
+2. Instalar dependencias:
+   ```bash
+   npm install
+
+## Autor
+
+Proyecto realizado por **Sheila** como trabajo final del curso de React.
