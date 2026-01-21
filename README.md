@@ -82,3 +82,5 @@ Las credenciales de Firebase se manejan mediante variables de entorno.
 ## Autor
 
 Proyecto realizado por **Sheila** como trabajo final del curso de React.
+Mi proyecto está online en Vercel:
+https://react-chiesa-eq3s.vercel.app
